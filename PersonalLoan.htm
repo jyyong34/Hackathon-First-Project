@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Demo: Using getElementById to get the elements in a form</title>
+</head>
+<script script type="text/javascript" src="demo1.js"></script>
+<body>
+
+<Table BORDER= "4" ALIGN = "center" CELLSPACING="5" CELLPADDING="10" width="100%">
+<TR BGCOLOR="Pink">     
+
+ <B><TD Align="Center"><img src= "Signature Pharmacy.jpg" width="100" height="100"><BR><BR><A HREF= "index.htm">Home</A> // <A HREF= "AboutUs.htm">About Us</A> // <A HREF= "Product.htm">Product</A> // <A HREF= "Gallery.htm">Gallery</A> // <A HREF= "ContactUs.htm">Contact Us</A></TD></B> 
+
+</TR>
+</Table>
+
+<BR>
+
+<Table BORDER="4" Align="Center" width="80%">
+<TR>
+<TD Align="Center"> <H1> Enquiry Form </H1> </TD>
+</TR>
+</Table>
+
+<Table Border="0" align ="Center" BGCOLOR= "Tan" width="80%" height="80%" Cellpadding="20">
+<form name ="subscribe" id="subscribe_frm" action="#">
+
+<TR> 
+<TD><p><B>Is there anything else you need to know?</B></p></TD>
+</TR> 
+
+<TR>
+<TD><p><I>Please fill in your particulars and we will get back to you soon.</I></p></TD>
+</TR>
+
+<TR>			
+<TD><label for="name">Name</label></TD>
+<TD>:</TD>
+<TD><input type="text" name="name" id="txt_name"></TD>
+</TR>
+
+<TR>
+<TD><label for="email">Email</label></TD>
+<TD>:</TD>
+<TD><input type="text" name="email" id="txt_email"></TD>
+</TR>
+
+<TR>
+<TD><label for="gender">Gender</label></TD>
+<TD>:</TD>
+<TD> <select name="gender" id="slt_gender">
+			       <option value="Male">Male</option>
+			       <option value="Female" SELECTED>Female</option>
+			       </select>
+</TD>
+</TR>
+
+<TR>
+<TD><label for="location"> Location </label></TD>
+<TD>:</TD>
+<TD><SELECT name="location" id="slt_location">
+                       <OPTION value="sarawak"> Sarawak </option>
+                       <OPTION value="kuala lumpur"> Kuala Lumpur </option>
+                       <OPTION value="sabah"SELECTED> Sabah </option>
+                     </SELECT>
+</TD>
+<TR>
+
+<TR>
+<TD><label for="enquiry"> Enquiry</label></TD>
+<TD>:</TD>
+<TD><TEXTAREA ROWS= "5" COLS= "40" WRAP="VIRTUAL" placeholder="Enter your comments in here." name="enquiry" id="txt_enquiry"></TEXTAREA></TD>
+</TR>
+
+<TR> 	
+<TD><input type="button" name="submit" value="submit" onclick="processFormData();" >
+<input type="reset" value="Reset"></TD>
+</TR>
+
+ 
+
+</form>
+
+</Table>
+
+</Body>
+
+</HTML>
